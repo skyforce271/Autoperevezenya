@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Автоперевезення з Європи</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Надійна доставка автомобілів з Європи в Україну. 20 років досвіду, власний автопарк, GPS-відстеження, фото-звіти.">
+  <meta name="keywords" content="автоперевезення, доставка авто з Європи, автовоз, логістика, авто з Німеччини, авто з Литви, перевезення авто Україна, авто з Європи, Евакуатор з Литви, Эвакуатор с Литви в Украину">
+ 
+
+  <link rel="stylesheet" href="Нова папка/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      min-height: 100vh;
+      padding-bottom: 60px; /* щоб футер не перекривав контент */
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+
+    }
+
+    /* Кожен фон — свій клас */
+    .home-bg {
+      background-image: url('about2.jpg');
+    }
+
+    .about-bg {
+      background-image: url('Sprinter2Cars.png');
+    }
+
+    .contacts-bg {
+      background-image: url('Contacts2.jpg');
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+
+    header {
+      background: rgba(126, 126, 126, 0.6);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0 0 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10rem;
+    }
+
+    nav a {
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      background: rgba(60, 60, 60, 0.477);
+      border-radius: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.5s;
+    }
+
+    nav a:hover {
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    .content {
+      padding: 2rem;
+      font-size : 2.5rem; /* Adjust the size as needed */
+      line-height: 2.8; /* Optional: improve readability */
+      max-width: 100%;
+    }
+
+    .content p {
+      font-size: 2.5rem; /* Adjust the size as needed */
+      line-height: 2.8; /* Optional: improve readability */
+      padding: 2rem ;
+      max-width: 100%;
+    }
+
+    .tab {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .tab.active {
+      display: block;
+      opacity: 1;
+      text-align: center;
+
+    }
+
+    .tab p {
+      font-size: 2.5rem; /* Match the font size of Головна */
+      line-height: 2.8; /* Optional: improve readability */
+      padding: 2rem;
+      max-width: 100%;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Оформлення опису */
+    .company-description {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 1rem; /* Add spacing between items */
+    }
+
+    .company-description .item {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: left; /* Center text */
+      margin-bottom: 2rem; /* Add spacing below each item */
+    }
+
+    .company-description img {
+      width: 100%; /* Make the image responsive */
+        max-width: 60%; /* Ensure it doesn't exceed the container width */
+        height: 40%; /* Maintain aspect ratio */
+        border-radius: 20px;
+        margin-bottom: 1rem; /* Add spacing below the image */
+      }
+
+    .company-description p {
+            font-size: 4.5rem; /* Adjust the font size */
+      line-height: 2; /* Improve readability */
+      margin: 0 auto; /* Center the text */
+      max-width: 800; /* Limit the width of the text */
+    }
+
+
+    /* General styles for mobile optimization */
+    @media (max-width: 768px) {
+      header {
+        padding: 1.5rem;
+        font-size: 1rem; /* Smaller font size for header */
+      }
+      
+      header h1 {
+        font-size: 1.5rem; /* Increase header font size */
+        margin-bottom: 1.5rem;
+      }
+
+      nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 1rem;
+      }
+
+      nav a {
+        font-size: 1.5rem; /* Increase navigation link font size */
+        padding: 1rem 2rem; /* Adjust padding for better tap targets */
+      }
+
+      .content {
+        padding: 1rem;
+        font-size: 1.25rem; /* Increase general content font size */
+
+
+        line-height: 1; /* Improve readability */;
+      }
+
+      .company-description {
+        gap: 2rem; /* Reduce spacing between items */
+      }
+
+      .company-description .item {
+        text-align: center; /* Center-align text for better readability */
+      }
+
+      .company-description .item2 {
+        text-align: left; /* Center-align text for better readability */
+      }
+
+      .company-description img {
+        max-width: 90%; /* Reduce image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      .company-description p {
+        font-size: 1.6rem; /* Increase description font size */
+        line-height: 1.8; /* Adjust line height for readability */
+        padding: 0.5rem;
+      }
+
+      .tab h2 {
+        font-size: 2rem; /* Increase tab heading font size */
+      }
+
+      .tab p {
+        font-size: 1.5rem; /* Increase tab content font size */
+        line-height: 1.8;
+      }
+
+      footer {
+        font-size: 1rem; /* Increase footer font size */
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body class="home-bg">
+  <header>
+    <h1>Автоперевезення з Європи</h1>
+    <nav>
+      <a onclick="showTab('home')">Головна</a>
+      <a onclick="showTab('about')">Про нас</a>
+      <a onclick="showTab('contacts')">Контакти</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <!-- ГОЛОВНА -->
+    <div id="home" class="tab active">
+      <div class="company-description">
+        <div class="item">
+          <p>Наша компанія спеціалізується на доставці автомобілів з країн ЄС вже понад 20 років.</p>
+          <img src="company3.jpg" alt="Фото автовоза">
+          <p>Ми — компанія, що спеціалізується на доставці автомобілів з Європи в Україну. Ми гарантуємо швидкість, надійність і безпеку при транспортуванні вашого автомобіля.</p>
+        </div>
+        <div class="item">
+          <img src="company2.jpg" alt="Фото автовоза"> 
+          <p>Чому клієнти обирають нас:</p>
+          <div class="item2">
+            ✅ Тисячі задоволених клієнтів<br>
+            ✅ Досвідчені водії з великим стажем<br>
+            ✅ Власний автопарк з новими автовозами<br>
+            ✅ Відстеження ваших авто в режимі реального часу 24/7<br>
+            ✅ Постійний зв’язок та фото/відео звіти під час перевезення та перед завантаженням
+          </div>
+        </div>
+        <div class="item">
+          <img src="company1.jpg" alt="Фото автовоза">
+          <p>Як ми працюємо:</p>
+          <div class="item2">
+            <li>Ви нам телефонуєте або надсилаєте повідомлення в Viber/WhatsApp </li>
+            <li>Ми узгоджуємо маршрут, вартість і дату</li>
+            <li>Забираємо авто в Європі та доставляємо в Україну</li>
+            <li>Ви отримуєте авто з усіма документами</li>
+          </div>
+        </div>
+        <div class="item">
+          <img src="comapny4.jpg" alt="Фото автовоза">
+          <p>Якщо ви цінуєте надійність, чесність і професіоналізм — вам до нас.</p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- кінець .content для головної -->
+
+  <!-- ПРО НАС -->
+  <div class="tab" id="about">
+    <div class="content">
+      <h2>Про нас</h2>
+      <p>Ми — українська логістична компанія, що спеціалізується на автоперевезеннях з Європи вже понад <strong>20 років</strong>. 
+        За цей час ми побудували репутацію <strong>надійного партнера</strong>, якого рекомендують друзям, родичам і знайомим.
+        Наша команда ретельно планує кожну доставку, забезпечує точність, безпеку та відповідність строкам. 
+        Всі автовози проходять регулярне технічне обслуговування, а водії мають великий досвід міжнародних перевезень.
+        Ми працюємо <strong>для вас, як для себе</strong>. Кожне авто — це довіра, яку ми не можемо підвести.
+        Ми вдячні кожному, хто обрав нас, і робимо все, щоб перевезення авто було для вас простим, безпечним і приємним досвідом.
+        Наша мета — зробити процес доставки авто максимально прозорим і зрозумілим для клієнта. Ми дотримуємося 
+        принципів чесності, відповідальності та постійної підтримки.</p>
+      <p style="font-style: italic; color: #ddd; margin-top: 1rem;">
+        "Якість — це не те, що ми обіцяємо. Це те, що ми гарантуємо."
+      </p>
+    </div>
+  </div>
+
+  <!-- КОНТАКТИ -->
+  <div class="tab" id="contacts">
+    <div class="content">
+      <h2>Наші контакти</h2>
+      <p>Телефон (Viber/WhatsApp): +38 (066) 254-32-24</p>
+      <p>Телефон (Viber/WhatsApp): +38 (093) 279-44-45</p>
+      <p>Email: autoperevezenya1@gmail.com</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Автоперевезення з Європи
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        const activeTab = document.getElementById(tabId);
+        if (activeTab) {
+          activeTab.classList.add('active');
+
+          // Зміна фону
+          const body = document.body;
+          body.classList.remove('home-bg', 'about-bg', 'contacts-bg');
+          if (tabId === 'home') body.classList.add('home-bg');
+          if (tabId === 'about') body.classList.add('about-bg');
+          if (tabId === 'contacts') body.classList.add('contacts-bg');
+
+          // Прокрутка до вмісту
+          setTimeout(() => {
+            activeTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      }
+
+      window.showTab = showTab;
+    });
+  </script>
+</body>
+</html>
+
