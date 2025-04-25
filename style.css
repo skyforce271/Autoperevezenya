@@ -1,0 +1,60 @@
+body {
+  background-image: url('../img/CarHauler3CarsSprinter.jpg');
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover; /* Зображення покриває весь екран */
+  background-position: center; /* Центруємо зображення */
+  background-repeat: no-repeat; /* Без повторів */
+  background-attachment: fixed; /* Фіксований фон */
+  color: #fff;
+  transition: background-image 0.6s ease-in-out;
+}
+
+/* Кожен фон — свій клас */
+.home-bg {
+  background-image: url('about2.jpg');
+}
+
+.about-bg {
+  background-image: url('Sprinter2Cars.png');
+}
+
+.contacts-bg {
+  background-image: url('Contacts2.jpg');
+}
+
+/* Додатково для мобільних пристроїв */
+@media (max-width: 1280px) {
+  body {
+    background-attachment: scroll; /* Для мобільних пристроїв фіксований фон може не працювати, тому ставимо scroll */
+  }
+}
+
+.large-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between images */
+  margin-top: 2rem; /* Space above the images */
+}
+
+.large-images img {
+  width: 90%; /* Images will take up 90% of the container's width */
+  max-width: 700px; /* Limit the maximum width to 700px */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for better appearance */
+}
+
+.company-description img {
+  width: 100%; /* Make the images take up the full width of their container */
+  max-width: 700px; /* Limit the maximum width to 700px */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for better appearance */
+  margin: 0 auto; /* Center the images */
+  display: block; /* Ensure proper centering */
+}
